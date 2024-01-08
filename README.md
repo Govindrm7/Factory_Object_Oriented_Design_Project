@@ -1,28 +1,25 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/AThGMyV3)
-# Welcome to the course CSYE6200 - Object Oriented Design
-> Northeastern University, College of Engineering
+# Project: Item Management System
 
+This project involves creating an Item Management System with specific requirements and guidelines. The system will include the creation of various item classes, reading data from CSV files, implementing design patterns, and utilizing factory methods for object creation.
 
-## Professor: Daniel Peters
+## Project Requirements
+- Create an `Item` superclass to use as an API.
+- Derive 3 classes from `Item`: `FoodItem`, `ElectronicItem`, and `ServiceItem`. Each class must override `toString()`.
+- Create all objects from CSV files (`FoodItemCSV.txt`, `ElectronicItemCSV.txt`, `ServiceItemCSV.txt`).
+- Create a `FileUtil` class for reading and writing text files.
+- Add a `FoodItem` class constructor that accepts a CSV string as its sole parameter and is responsible for parsing the CSV string.
+- Apply the Factory Design Pattern to abstract the creation of all objects.
+  - `FoodItemFactory` implements the Factory Method pattern.
+  - `ElectronicItemFactory` implements a Lazy Singleton and Factory Method patterns.
+  - `ServiceItemFactory` implements an Eager Singleton and Factory Method patterns.
+- Create an `AbstractStore` abstract class.
+- Derive a `Store` class from `AbstractStore` and use the `Store`'s `demo()` method to create several objects using the Factories and sort them by:
+  1. ID
+  2. Name
+  3. Price
 
-### Requirements
-1. Eclipse or VS Code or IntelliJ.
+## Additional Instructions
+- Ensure that `Driver.java` only contains the call to the demo class and nothing else. Do not change the file structures.
+- Submission: Push all the commits to GitHub and submit to Canvas on time. A 20 point deduction will be applied for late or incorrect submissions.
 
-Note: If you are using Eclipse, please have git CLI installed on your system or GitHub Desktop to commit the code in this repository
-
-### SetUp Instructions
-1. Please clone the repository on your local system
-2. For Eclipse Import the project as Existing Maven Project, For IntelliJ you can directlty open it using 'Get from VCS'.
-4. All code should be pushed to the main branch
-3. Ensure the GitHub actions are successful post push
-
-Submissions will have deadlines, failed GitHub Actions would result in point deductions.
-
-### References
-1. Cloning a Repository: <https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository>
-2. Any GitHub Setup: Please refer to the Git & GitHub Fundamentals Repository shared to you by your respective TA and refer the README.md section
-
-Please reach out to your respective TA if you need any help in regards with submission/ GitHub
-
-Author:
-- Ruchika Sharma (sharma.ruc@northeastern.edu)
+For more information, refer to the project guidelines and requirements.
